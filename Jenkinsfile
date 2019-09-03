@@ -7,4 +7,8 @@ node('ops01Java') {
     stage('Package') {
         sh 'mvn package'
     }
+
+    stage('archieveartifacts') {
+        archive 'gameoflife-web/target/*.war'
+    }
 }
