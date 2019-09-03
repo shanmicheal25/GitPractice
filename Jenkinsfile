@@ -1,4 +1,4 @@
-node('ops01Java') }{
+node('ops01Java') {
     
       stage('VCS') {
         git 'https://github.com/shanmicheal25/GitPractice.git'
